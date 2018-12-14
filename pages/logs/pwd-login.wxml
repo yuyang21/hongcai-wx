@@ -1,0 +1,25 @@
+<!--pwd-login.wxml-->
+<import src="../templates/pager/pager.wxml"/>
+<view class="page_login1">
+  <block>
+    <image mode="aspectFit" src="../../images/logs/login-icon.png" class="login-icon"></image>
+  </block>
+  <form bindsubmit="formSubmit" class="mobileForm">
+    <view class="mobile">
+      <input placeholder="请输入登录密码" type="text" password="{{eyes_visible}}" placeholder-class="placeholder-class" bindinput="watchPwd"/>
+      <image class="eyes" src="{{eyes_src}}" bindtap="selectEyes"></image>
+    </view>
+    <view class="next">
+      <block>
+        <button class="next-btn" bindtap="userLogin">登录</button>
+      </block>
+      <view class="display-inlb">
+        <text class="goto-register" catchtap="toRegister">注册账号</text>
+      </view>
+      <view class="display-inlb">
+        <text class="forget-pwd" catchtap="toForgetPwd">忘记密码</text>
+      </view>
+    </view>
+  </form>
+  <template is="pager-trust"/>
+</view>

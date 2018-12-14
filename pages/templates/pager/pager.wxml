@@ -1,0 +1,8 @@
+<!--pager.wxml-->
+<template name="pager-trust">
+  <view class="bottomTips">
+    <image class="icon_gzzl" mode="aspectFit" src="../../images/logs/icon_gzzl.png"></image><text class="text_gzzl">国企战略投资A轮1亿元</text>
+    <image class="icon_yhcg" mode="aspectFit" src="../../images/logs/icon_yhcg.png"></image><text>海口联合农商银行正式存管</text>
+  </view>
+</template>
+

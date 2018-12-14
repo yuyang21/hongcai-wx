@@ -1,0 +1,6 @@
+<!--logo.wxml-->
+<template name="app-logo">
+  <view class="logo">
+    <image src="../../../images/main/logo.png"></image>
+  </view>
+</template>

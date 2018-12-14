@@ -1,0 +1,4 @@
+<!--project-list.wxml-->
+<view name="projectList" class="container" bindtap="system">
+  {{item.index}}:{{item.msg}}
+</view>

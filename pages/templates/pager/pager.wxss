@@ -1,0 +1,41 @@
+/* pager.wxss */
+.bottomTips {
+  color: #444;
+  font-size: 28rpx;
+  margin-top: 272px;
+  margin-bottom: 96rpx;
+  text-align: center;
+}
+.bottomTips .text_gzzl {
+  margin-right: 35rpx;
+}
+.bottomTips .icon_gzzl {
+  width:38rpx;
+  height: 28rpx;
+  vertical-align:text-bottom;
+}
+.bottomTips .icon_yhcg {
+  width:38rpx;
+  height: 28rpx;
+  vertical-align: text-bottom;
+}
+@media (min-width: 320px) {
+  .bottomTips {
+    margin-top: 271rpx;
+  }
+}
+@media (min-width: 360px) {
+  .bottomTips {
+    margin-top: 372rpx;
+  }
+}
+@media (min-width: 375px) {
+  .bottomTips {
+    margin-top: 422rpx;
+  }
+}
+@media (min-width: 414px) {
+  .bottomTips {
+    margin-top: 495rpx;
+  }
+}

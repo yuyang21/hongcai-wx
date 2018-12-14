@@ -1,0 +1,24 @@
+/* pages/logs/pwd-login.wxss */
+@import "logs.wxss";
+@import "../../app.wxss";
+@import "../templates/pager/pager.wxss";
+.forget-pwd {
+  font-size:28rpx;
+  color:#666;
+  padding-left:46rpx;
+  border-left:1px solid #666;
+}
+.goto-register {
+  padding-right: 46rpx;
+}
+.mobile {
+  position: relative;
+}
+.eyes {
+  width:50rpx;
+  height:15px;
+  position:absolute;
+  right:50rpx;
+  top:31rpx;
+  z-index: 2222;
+}

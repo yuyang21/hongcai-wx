@@ -1,0 +1,93 @@
+/* capcha-login.wxss */
+@import "logs.wxss";
+@import "../templates/pager/pager.wxss";
+.pic-capcha, .mob-capcha, .register {
+  padding: 0 40rpx;
+}
+.text-center {
+  text-align: center;
+}
+input {
+  border-bottom: 1px solid #bfbfbf;
+  font-size: 15px;
+  height: 110rpx;
+  line-height: 120px;
+} 
+.mobile-placeholder {
+  color: #bfbfbf;
+  width: 100%;
+  line-height: 120px;
+}
+.pic-capcha input {
+  width: 68%;
+  /*display: inline-block;*/
+  margin-right: 0;
+  float: left;
+}
+.pic-capcha .capcha {
+  width: 25%;
+  float: right;
+  height: 70rpx;
+  margin-top: 39rpx;
+}
+
+.mob-capcha input {
+  margin-right: 0;
+  float: left;
+  width: 68%;
+}
+.mob-capcha .capcha {
+  width: 32%;
+  float: right;
+  font-size: 13px;
+  height: 110rpx;
+  line-height: 120rpx;
+  color: #ff611d;
+  text-align: center;
+  border-bottom: 1px solid #bfbfbf;
+}
+.register {
+  padding-top: 50px;
+}
+.register .goto-registe {
+  font-size: 13px;
+  color: #666;
+  text-align: center;
+  display: block;
+}
+@media (min-width: 320px) {
+  .bottomTips {
+    margin-top: 160rpx;
+  }
+  input {
+    font-size: 14px;
+    width: 60%;
+  }
+  .mob-capcha input {
+    width:64.5%;
+  }
+}
+@media (min-width: 360px) {
+  .bottomTips {
+    margin-top: 372rpx;
+  }
+  input {
+    font-size: 16px;
+  }
+}
+@media (min-width: 375px) {
+  .bottomTips {
+    margin-top: 300rpx;
+  }
+  .mob-capcha input {
+    width:65%;
+  }
+}
+@media (min-width: 414px) {
+  .bottomTips {
+    margin-top: 372rpx;
+  }
+  .mob-capcha input {
+    width:68.3%;
+  }
+}

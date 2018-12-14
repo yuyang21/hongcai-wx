@@ -1,0 +1,27 @@
+<!--<import src='../templates/logo/logo.wxml'/>
+<template is='app-logo' data=''></template>-->
+<view>
+  <image src="../../../images/main/logo.png" class="logo-icon"></image>
+  <form bindsubmit="toRegister" bindreset="formReset">
+    <view class="mobile">
+      <input type="number" confirm-type="next" placeholder="请输入手机号" placeholder-class="mobile-placeholder" maxlength="11" bindinput="bindMobInput" bindblur="checkMobile" auto-focus/>
+    </view>
+    <view class="pic-capcha clearfix">
+      <input type="text" confirm-type="next" placeholder="请输入图形验证码" placeholder-class="mobile-placeholder" maxlength="14" bindinput="bindPicInput" class="pic-ipt" />
+      <image class="capcha" src="{{picCapcha}}" bindtap="refreshCode"></image>
+    </view>
+    <view class="mob-capcha clearfix">
+      <input type="number" confirm-type="next" placeholder="请输短信验证码" placeholder-class="mobile-placeholder" maxlength="6" bindinput="bindMobCapchaInput"/>
+      <view class="capcha"  bindtap="getMobCapcha">{{sendMsg}}</view>
+    </view>
+    <view class="password clearfix">
+      <input type="text" password="{{eyes_visible}}" confirm-type="done" placeholder="请设置6-16位数字、字母组合而成的密码" placeholder-class="mobile-placeholder" maxlength="6" bindinput="bindPasswordInput"/>
+      <image src="{{eyes_src}}" catchtap="toggleEye"></image>
+    </view>
+    <view class="register">
+      <button form-type="submit" bindtap="toRegister">注册</button>
+      <view class="register-tip1">注册即表示您同意<text>《宏财网服务协议》</text></view>
+      <view class="register-tip2">已有账号，<text bindtap="toLogin">去登录</text> </view>
+    </view>
+  </form>
+</view>

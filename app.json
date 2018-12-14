@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/logs/capcha-login",
+    "pages/logs/pwd-login",
+    "pages/logs/logs",
+    "pages/register/register",
+    "pages/index/index",
+    "pages/project/project-list",
+    "pages/project-list/project-list",
+    "pages/templates/pager/pager",
+    "pages/templates/logo/logo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "宏财网",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#35495e",
+    "borderStyle": "white",
+    "backgroundColor": "#f9f9f9",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "images/main/home-actived.png",
+        "selectedIconPath": "images/main/home-actived.png"
+      },
+      {
+        "text": "目录",
+        "pagePath": "pages/project/project-list",
+        "iconPath": "images/main/note-actived.png",
+        "selectedIconPath": "images/main/note-actived.png"
+      },
+      {
+        "text": "注册",
+        "pagePath": "pages/register/register",
+        "iconPath": "images/main/profile-actived.png",
+        "selectedIconPath": "images/main/profile-actived.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+<!--logs.wxml-->
+<import src="../templates/pager/pager.wxml"/>
+<view class="page_login1">
+  <block>
+    <image mode="aspectFit" src="../../images/logs/login-icon.png" class="login-icon"></image>
+  </block>
+  <form bindsubmit="formSubmit" class="mobileForm">
+    <view class="mobile">
+      <input placeholder="请输入手机号" type="number" maxlength="11" placeholder-class="placeholder-class" bindinput="bindKeyInput"/>
+    </view>
+    <view class="next">
+      <block>
+        <button class="next-btn" bindtap="checkMobile">下一步</button>
+      </block>
+      <view><text class="goto-register" catchtap="toRegister">注册账号</text></view>
+    </view>
+  </form>
+  <template is="pager-trust"/>
+</view>

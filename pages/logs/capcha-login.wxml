@@ -1,0 +1,23 @@
+<!--capcha-login.wxml-->
+<import src="../templates/pager/pager.wxml"/>
+<view class="capcha-login">
+  <block>
+    <image mode="aspectFit" src="../../images/logs/login-icon.png" class="login-icon" width="100%"></image>
+  </block>
+  <form bindsubmit="mobileLogin" bindreset="formReset">
+    <view class="pic-capcha clearfix">
+      <input type="text" confirm-type="next" placeholder="请输入图形验证码" placeholder-class="mobile-placeholder" maxlength="4" bindinput="bindPicCaptcha"/>
+      <image class="capcha" src="{{capchaCodeSrc}}" catchtap="refreshCode"></image>
+    </view>
+    <view class="mob-capcha clearfix">
+      <input type="number" confirm-type="next" placeholder="请输短信验证码" placeholder-class="mobile-placeholder" maxlength="6" bindinput="bindMobileCaptcha"/>
+      <view class="capcha" catchtap="capchaCountdown">{{sendMsg}}</view>
+    </view>
+    <view class="register">
+      <button form-type="submit" class="next-btn">登录</button>
+      <text class="goto-registe" catchtap="toRegister">注册账号</text>
+    </view>
+  </form>
+  <template is="pager-trust"/>
+</view>
+
